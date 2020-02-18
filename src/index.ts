@@ -113,7 +113,7 @@ export const getEarliestSunriseDayLength = async (batchSize: number) => {
 
   const day = new Date(0);
 
-  day.setUTCSeconds(parseInt(earliestSunrise.results.sunrise, 10));
+  day.setUTCSeconds(parseInt(earliestSunrise.results.sunrise, 10) * 10);
 
   const [lat, lng] = points[0];
 
